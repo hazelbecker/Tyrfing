@@ -1,17 +1,27 @@
 package com.Tyrfing.models.utility;
 
+import javax.persistence.*;
+
+@Entity
 public class Stats {
 
+    @Id
+    @GeneratedValue
     private long id;
 
+    @Column
     private Integer health;
 
+    @Column
     private Integer currentHealth;
 
+    @Column
     private Integer power;
 
+    @Column
     private Integer endurance;
 
+    @Column
     private Integer danger;
 
     public Stats(Integer health, Integer currentHealth, Integer power, Integer endurance, Integer danger) {

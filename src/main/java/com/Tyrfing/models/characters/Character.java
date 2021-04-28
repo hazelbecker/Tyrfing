@@ -2,10 +2,22 @@ package com.Tyrfing.models.characters;
 
 import com.Tyrfing.models.utility.Stats;
 
+import javax.persistence.*;
+
+@Entity
 public abstract class Character {
 
+    @Id
+    @GeneratedValue
+    private long id;
+
+    @Column
     private String name;
+
+    @OneToOne
     private Stats stats;
+
+    @Column
     private Integer exp;
 
     public Character(String name) {

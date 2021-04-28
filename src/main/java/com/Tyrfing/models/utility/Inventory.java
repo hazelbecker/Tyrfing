@@ -23,8 +23,20 @@ public class Inventory {
         return this.items;
     }
 
+    public Item getItem(Integer index) {
+        return this.items.get(index);
+    }
+
+    public void removeItem(Integer index) {
+        this.items.remove(index);
+    }
+
     public void setItems(ArrayList<Item> items) {
         this.items = items;
+    }
+
+    public void addItem(Item item) {
+        this.items.add(item);
     }
 
 }

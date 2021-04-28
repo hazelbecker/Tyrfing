@@ -1,9 +1,18 @@
 package com.Tyrfing.models.items;
 
+import javax.persistence.*;
+
+@Entity
 public class Potion implements Item {
 
+    @Id
+    @GeneratedValue
     private long id;
+
+    @Column
     private Integer currentHealthMod;
+
+    @Column
     private Integer dangerMod;
 
     public Potion(Integer currentHealthMod, Integer dangerMod){
