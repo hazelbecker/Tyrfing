@@ -24,8 +24,7 @@ public class ItemStats {
         this.dangerMod = dangerMod;
     }
 
-    public ItemStats() {
-    }
+    public ItemStats(){}
 
     public Integer getPowerMod() {
         return powerMod;

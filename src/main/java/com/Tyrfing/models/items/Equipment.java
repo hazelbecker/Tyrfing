@@ -22,8 +22,7 @@ public class Equipment implements Item {
         this.equipmentType = equipmentType;
     }
 
-    public Equipment() {
-    }
+    public Equipment(){}
 
     public Integer getItemPower() {
         return itemStats.getPowerMod();

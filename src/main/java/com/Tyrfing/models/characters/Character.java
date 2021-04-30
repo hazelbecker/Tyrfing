@@ -26,6 +26,8 @@ public abstract class Character {
         this.exp = 0;
     }
 
+    public Character(){}
+
     public String getName() {
         return this.name;
     }

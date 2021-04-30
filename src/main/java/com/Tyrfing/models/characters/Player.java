@@ -14,4 +14,6 @@ public class Player extends Character {
         this.inventory = new Inventory();
     }
 
+    public Player(){}
+
 }

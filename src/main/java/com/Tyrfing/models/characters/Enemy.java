@@ -9,4 +9,6 @@ public class Enemy extends Character {
         super(name);
     }
 
+    public Enemy(){}
+
 }

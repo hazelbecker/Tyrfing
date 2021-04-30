@@ -20,6 +20,8 @@ public class Potion implements Item {
         this.dangerMod = dangerMod;
     }
 
+    public Potion(){}
+
     public Integer getCurrentHealthMod() {
         return this.currentHealthMod;
     }
