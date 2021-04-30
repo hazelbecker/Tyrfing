@@ -40,8 +40,16 @@ public class Equipment implements Item {
         this.itemStats = itemStats;
     }
 
-    public String getEquipmentType(){
-        return equipmentType.toString();
+    public ItemStats getItemStats(){
+        return this.itemStats;
+    }
+
+    public EquipmentType getEquipmentType(){
+        return this.equipmentType;
+    }
+
+    public String getEquipmentTypeString() {
+        return this.equipmentType.toString();
     }
 
     public void setEquipmentType(EquipmentType equipmentType){

@@ -42,8 +42,4 @@ public class Potion implements Item {
         return this.id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
 }
