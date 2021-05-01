@@ -61,19 +61,19 @@ public abstract class Character {
     }
 
     public void setCurrentHealth(Integer currentHealth){
-        this.stats.setHealth(currentHealth);
+        this.stats.setCurrentHealth(currentHealth);
     }
 
     public void setPower(Integer power){
-        this.stats.setHealth(power);
+        this.stats.setPower(power);
     }
 
     public void setEndurance(Integer endurance){
-        this.stats.setHealth(endurance);
+        this.stats.setEndurance(endurance);
     }
 
     public void setDanger(Integer danger){
-        this.stats.setHealth(danger);
+        this.stats.setDanger(danger);
     }
 
     public void addExp(Integer mod){
