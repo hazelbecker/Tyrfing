@@ -1,6 +1,6 @@
 package com.Tyrfing.engine;
 
-import com.Tyrfing.models.characters.Character
+import com.Tyrfing.models.characters.Character;
 import com.Tyrfing.models.items.Potion;
 
 import java.util.Random;
@@ -39,7 +39,7 @@ public class AttackManager {
 
     public Integer potionCalculation(Character consumer, Potion potion){
 
-        if(consumer.getCurrentHealth() == consumer.getHealth()){
+        if(consumer.getCurrentHealth().equals(consumer.getHealth())){
             consumer.setDanger(consumer.getDanger() + potion.getDangerMod());
             return 0;
         }
