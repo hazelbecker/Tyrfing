@@ -19,8 +19,8 @@ public class EquipmentService {
         return this.repo.findAll();
     }
 
-    public Equipment create(Equipment enemy) {
-        return repo.save(enemy);
+    public Equipment create(Equipment equipment) {
+        return repo.save(equipment);
     }
 
     public Equipment read(Long id) {
